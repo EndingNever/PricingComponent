@@ -6,13 +6,12 @@ export default function Basic(props) {
     return (
         <>
             {options.map((option) => (
-
                 <div className={`basic-card basic-card-${option.id}`} key={option.id}>
-                    <div className="card-title">
+                    <div className={`card-title card-title-${option.id}`} >
                         <h3>{option.name}</h3>
                     </div>
                     <div className="card-price">
-                        <h1>{option.monthlyPrice}</h1>
+                        <h1><span className='dollar-sign'>$</span>{option.monthlyPrice}</h1>
                     </div>
                     <div className="card-info">
                         <div className="card-features">
