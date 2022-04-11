@@ -1,18 +1,56 @@
 .pricing-component {
-//   border: 2px solid green;
+  //   border: 2px solid green;
   padding: 20px;
+
+  .header{
+    margin-bottom: 28px;
+  }
 }
 
 .toggle {
-  display: inline-block;
 
   .annually {
     // border: 2px solid red;
     display: inline-block;
   }
 
+  .slider {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius:34px;
+    display: inline-block;
+    position: relative;
+    // padding:15px;
+    top: 12px;
+    // top: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 34px;
+    width: 60px;
+
+    .slider-button{
+      background-color: white;
+      border-radius: 70%;
+      position: absolute;
+      left: 5px;
+      top: 4px;
+      height: 77%;
+      // margin-left: 4px;
+      width: 44%;
+    }
+  }
+
   .monthly {
     // border: 2px solid red;
     display: inline-block;
   }
+}
+
+
+.left-action{
+  transform: translateX(0px);
+  transition: .2s;
+}
+.right-action{
+      transform: translateX(26px);
+  transition: .2s;
 }
