@@ -5,3 +5,17 @@
     margin-bottom: 24px;
     width: 85%;
 }
+
+.card-features{
+    // border: 2px solid red;
+    margin-top: 32px;
+    .feature{
+        // margin-top:8px;
+        padding: 8px 0px 8px 0px;
+
+    }
+    hr{
+        // border: 2px solid red;
+        width: 80%;    
+    }
+}
