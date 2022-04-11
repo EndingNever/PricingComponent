@@ -1,0 +1,14 @@
+.App{
+  background-color: hsl(240, 78%, 98%);
+  text-align: center;
+  background-image: url('/public/images/bg-top.svg');
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.card-components-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
