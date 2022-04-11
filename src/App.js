@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Basic from './Components/Basic/Basic';
 import Pricing from './Components/OurPricing/Pricing';
@@ -27,14 +28,17 @@ function App() {
     }
   ];
   
+  const [annually, setAnnually] = useState(false)
+  const [slider, setSlider] = useState('right-action')
+
   
   return (
     <div className="App">
       <div className="pricing-component-container">
-        <Pricing />
+        <Pricing props={[annually, slider] }/>
       </div>
       <div className="card-components-container">
-        <Basic options={options}/>
+        <Basic options={options} slider={slider} annually={annually}/>
       </div>
     </div>
   );

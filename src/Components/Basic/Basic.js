@@ -11,7 +11,7 @@ export default function Basic(props) {
                         <h3>{option.name}</h3>
                     </div>
                     <div className="card-price">
-                        <h1><span className='dollar-sign'>$</span>{option.monthlyPrice}</h1>
+                        <h1><span>$</span>{props.annually===false ? `${option.monthlyPrice}` : `${option.yearlyPrice}`}</h1>
                     </div>
                     <div className="card-info">
                         <div className="card-features">

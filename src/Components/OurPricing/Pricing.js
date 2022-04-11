@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import "./Pricing.scss"
 
 export default function Pricing() {
-    const [slider, setSlider] = useState('left-action')
+    const [annually, setAnnually] = useState(false)
+    const [slider, setSlider] = useState('right-action')
     const onSlideEnabled=()=>{
         if(slider==='left-action'){
-            console.log('going right');
             setSlider('right-action');
-        } else{
-            console.log('going left')
+            setAnnually(true);
+            console.log('going right', "annually is " + annually);
+        } else if (slider==='right-action'){
             setSlider('left-action')
+            setAnnually(false)
+            console.log('going left',"annually is " +  annually);
         }
     }
     
@@ -20,7 +23,7 @@ export default function Pricing() {
                 <div className="toggle">
                     <p className='annually'>Annually</p>
                     <div onClick={onSlideEnabled} className="slider">
-                        <div  className={`slider-button ${slider}`}></div>
+                        <div className={`slider-button ${slider}`}></div>
                     </div>
                     <p className='monthly'>Monthly</p>
                 </div>
