@@ -2,16 +2,17 @@ import React from 'react'
 import "./Basic.scss"
 
 export default function Basic(props) {
+    const options = props.options;
     return (
         <>
-            {props.options.map((option) => (
+            {options.map((option) => (
 
-                <div className="basic-card" key={option.id}>
+                <div className={`basic-card basic-card-${option.id}`} key={option.id}>
                     <div className="card-title">
                         <h3>{option.name}</h3>
                     </div>
                     <div className="card-price">
-                        {option.monthlyPrice}
+                        <h1>{option.monthlyPrice}</h1>
                     </div>
                     <div className="card-info">
                         <div className="card-features">
@@ -24,7 +25,7 @@ export default function Basic(props) {
                             <hr className='hr' />
                         </div>
                     </div>
-                    <button>button</button>
+                    <button className={`button button-${option.id}`}><p>Learn More</p></button>
                 </div>
             ))}
         </>
