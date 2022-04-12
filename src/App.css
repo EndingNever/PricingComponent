@@ -4,6 +4,7 @@
   background-color: hsl(240, 78%, 98%);
   text-align: center;
   background-image: url('/public/images/bg-top.svg');
+  background-position: 180px 0px;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
