@@ -15,12 +15,16 @@ function App() {
         <Pricing
           annually={annually}
           setAnnually={setAnnually}
-          slider={slider} 
+          slider={slider}
           setSlider={setSlider}
-          />
+        />
       </div>
       <div className="card-components-container">
-        <Basic options={options} slider={slider} annually={annually} />
+        <Basic
+          options={options}
+          slider={slider}
+          annually={annually}
+        />
       </div>
     </div>
   );
