@@ -1,5 +1,4 @@
 .pricing-component {
-  //   border: 2px solid green;
   padding: 20px;
 
   .header {
@@ -9,7 +8,6 @@
 
 .toggle {
   .annually {
-    // border: 2px solid red;
     display: inline-block;
   }
 
@@ -21,14 +19,21 @@
     );
     border-radius: 34px;
     display: inline-block;
+    height: 34px;
     position: relative;
-    // padding:15px;
     top: 12px;
-    // top: 15px;
     margin-left: 12px;
     margin-right: 12px;
-    height: 34px;
+    cursor: pointer;
     width: 60px;
+   
+    &:hover {
+      background: linear-gradient(
+        to right,
+        hsla(236, 72%, 79%, 0.6),
+        hsl(237, 63%, 64%, .6)
+      );
+  }
 
     .slider-button {
       background-color: white;
@@ -37,13 +42,11 @@
       left: 5px;
       top: 4px;
       height: 77%;
-      // margin-left: 4px;
       width: 44%;
     }
   }
 
   .monthly {
-    // border: 2px solid red;
     display: inline-block;
   }
 }
