@@ -27,6 +27,10 @@
   color: white;
 }
 
+.card-info{
+  width: 100%;
+  // border: 2px solid red;
+}
 
 
 .card-price{
@@ -83,7 +87,8 @@
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 32px;
-    max-width: 400px;
+    min-width: 300px;
+    max-width: 380px;
   }
 
   .basic-card-1 {
