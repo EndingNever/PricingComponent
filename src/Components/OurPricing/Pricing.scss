@@ -3,6 +3,10 @@
 
   .header {
     margin-bottom: 28px;
+    
+    h2{
+      // border: 2px solid red;
+    }
   }
 }
 
@@ -33,7 +37,22 @@
         hsla(236, 72%, 79%, 0.6),
         hsl(237, 63%, 64%, .6)
       );
+    &:active{
+      background: linear-gradient(
+        to right,
+        hsla(236, 72%, 79%, 0.6),
+        hsl(237, 63%, 64%, .6)
+      );
+    }
+    &:focus{
+      background: linear-gradient(
+        to right,
+        hsla(236, 72%, 79%, 0.6),
+        hsl(237, 63%, 64%, .6)
+      );
+    }
   }
+
 
     .slider-button {
       background-color: white;

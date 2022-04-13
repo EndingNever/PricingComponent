@@ -2,12 +2,14 @@
 
 .App{
   background-color: hsl(240, 78%, 98%);
+  color: rgba(0, 0, 0, 0.7);
   text-align: center;
   background-image: url('/public/images/bg-top.svg');
   background-position: 180px 0px;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -16,4 +18,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width:469px){
+  .App{
+    background-position: 45vw 0% ;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .App{
+    background-position: 120% 0%;
+  }
+  
+  .card-components-container{
+    flex-direction: row;
+    margin-top: 10vh;
+  }
+  
 }
