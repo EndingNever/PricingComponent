@@ -15,13 +15,13 @@ export default function Basic(props) {
                     </div>
                     <div className="card-info">
                         <div className="card-features">
-                            <hr className='hr' />
+                            {/* <hr className='hr' /> */}
                             <div className="feature">{option.features[0]}</div>
-                            <hr className='hr' />
-                            <div className="feature">{option.features[1]}</div>
-                            <hr className='hr' />
-                            <div className="feature">{option.features[2]}</div>
-                            <hr className='hr' />
+                            {/* <hr className='hr' /> */}
+                            <div className={`feature feature-${option.id}`}>{option.features[1]}</div>
+                            {/* <hr className='hr' /> */}
+                            <div className="feature" >{option.features[2]}</div>
+                            {/* <hr className='hr' /> */}
                         </div>
                     </div>
                     <button className={`button button-${option.id}`}><p>Learn More</p></button>

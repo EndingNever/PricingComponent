@@ -30,7 +30,7 @@
 @media screen and (min-width:992px) {
   .App{
     background-image: url('/public/images/bg-top.svg'), url('/public/images/bg-bottom.svg');
-    background-position: 100% 0%, -50% 200px;
+    background-position: 100% 0%, -820px 200px;
     background-repeat: no-repeat;
     background-size: contain;
   }
