@@ -8,56 +8,43 @@
   height: 400px;
   margin-bottom: 24px;
   width: 85%;
-  padding-bottom:20px;
-
-  .card-title{
-      color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 20px;
+  .card-title {
+    color: rgba(0, 0, 0, 0.7);
   }
-
-  .card-title-1{
-      color: white;
+  .card-title-1 {
+    color: white;
   }
-
 }
-
-
 
 .basic-card-1 {
   background: linear-gradient(130deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
 }
 
-.card-info{
+.card-info {
   width: 100%;
-  // border: 2px solid red;
 }
 
-
-.card-price{
-    // border: 2px solid red;
-    h1{
-        font-size:52px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-    .dollar-sign{
-        // border: 2px solid red;
-        position: relative;
-        bottom: 8px;
-        font-size: 24px;
-        margin-right: 2px;
-    }
+.card-price {
+  h1 {
+    font-size: 52px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .dollar-sign {
+    position: relative;
+    bottom: 8px;
+    font-size: 24px;
+    margin-right: 2px;
+  }
 }
 
 .card-features {
-  // border: 2px solid red;
-  // margin-top: 32px;
   .feature {
-    // margin-top:8px;
     padding: 8px 0px 8px 0px;
   }
   hr {
-    // border: 2px solid red;
     width: 80%;
   }
 }
@@ -79,9 +66,9 @@
   font-weight: 700;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
   .basic-card {
-    box-shadow: 8px 8px 8px  rgba(87, 87, 87, 0.222);
+    box-shadow: 8px 8px 8px rgba(87, 87, 87, 0.222);
     height: 480px;
     justify-content: space-evenly;
     margin-left: 8px;
@@ -90,9 +77,7 @@
     min-width: 300px;
     max-width: 380px;
   }
-
   .basic-card-1 {
     transform: scaleY(1.05);
   }
-
 }
