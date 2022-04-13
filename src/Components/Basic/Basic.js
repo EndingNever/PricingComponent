@@ -4,7 +4,7 @@ import "./Basic.scss"
 export default function Basic(props) {
     const options = props.options;
     return (
-        <>
+        <div className="card-components-container">
             {options.map((option) => (
                 <div className={`basic-card basic-card-${option.id}`} key={option.id}>
                     <div className={`card-title card-title-${option.id}`} >
@@ -27,6 +27,6 @@ export default function Basic(props) {
                     <button className={`button button-${option.id}`}><p>Learn More</p></button>
                 </div>
             ))}
-        </>
+        </div>
     )
 }

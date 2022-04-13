@@ -9,11 +9,11 @@ export default function Pricing(props) {
         if (props.slider === 'left-action') { // if slider is on left (annually) we set the slider to the right on click
             props.setSlider('right-action');
             props.setAnnually(false);
-        } else if (props.slider === 'right-action') {  // if slider is right (monthly) we set it to annually on click
+        } else { // if slider is right (monthly) we set it to annually on click
             props.setSlider('left-action')
             props.setAnnually(true)
-        }
     }
+}
 
     return (
         <div className='pricing-component'>

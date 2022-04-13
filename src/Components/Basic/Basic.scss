@@ -1,6 +1,10 @@
 .basic-card {
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   margin-bottom: 24px;
   width: 85%;
@@ -28,7 +32,9 @@
 .card-price{
     // border: 2px solid red;
     h1{
-        font-size:52px
+        font-size:52px;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
     .dollar-sign{
         // border: 2px solid red;
@@ -41,7 +47,7 @@
 
 .card-features {
   // border: 2px solid red;
-  margin-top: 32px;
+  // margin-top: 32px;
   .feature {
     // margin-top:8px;
     padding: 8px 0px 8px 0px;
@@ -59,6 +65,7 @@
   cursor: pointer;
   color: white;
   margin-top: 8px;
+  outline: none;
   width: 55%;
 }
 
@@ -68,6 +75,19 @@
   font-weight: 700;
 }
 
-@media screen and (min-width:1200px) {
-    
+@media screen and (min-width:992px) {
+  .basic-card {
+    box-shadow: 8px 8px 8px  rgba(87, 87, 87, 0.222);
+    height: 480px;
+    justify-content: space-evenly;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 32px;
+    max-width: 400px;
+  }
+
+  .basic-card-1 {
+    transform: scaleY(1.05);
+  }
+
 }

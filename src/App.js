@@ -11,21 +11,17 @@ function App() {
 
   return (
     <div className="App">
-      <div className="pricing-component-container">
         <Pricing
           annually={annually}
           setAnnually={setAnnually}
           slider={slider}
           setSlider={setSlider}
         />
-      </div>
-      <div className="card-components-container">
         <Basic
           options={options}
           slider={slider}
           annually={annually}
         />
-      </div>
     </div>
   );
 }

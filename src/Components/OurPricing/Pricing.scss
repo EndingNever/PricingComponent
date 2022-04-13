@@ -22,38 +22,42 @@
       hsl(237, 63%, 64%)
     );
     border-radius: 34px;
+    cursor: pointer;
     display: inline-block;
     height: 34px;
     position: relative;
     top: 12px;
     margin-left: 12px;
     margin-right: 12px;
-    cursor: pointer;
+    outline: none;
     width: 60px;
-   
+    
     &:hover {
       background: linear-gradient(
         to right,
         hsla(236, 72%, 79%, 0.6),
         hsl(237, 63%, 64%, .6)
-      );
-    &:active{
+        );
+        outline: none;
+        &:active{
+          background: linear-gradient(
+            to right,
+            hsla(236, 72%, 79%, 0.6),
+            hsl(237, 63%, 64%, .6)
+            );
+            outline: none;
+          }
+          &:focus{
       background: linear-gradient(
         to right,
         hsla(236, 72%, 79%, 0.6),
         hsl(237, 63%, 64%, .6)
-      );
+        );
+        outline: none;
+      }
     }
-    &:focus{
-      background: linear-gradient(
-        to right,
-        hsla(236, 72%, 79%, 0.6),
-        hsl(237, 63%, 64%, .6)
-      );
-    }
-  }
-
-
+    
+    
     .slider-button {
       background-color: white;
       border-radius: 70%;
@@ -61,6 +65,7 @@
       left: 5px;
       top: 4px;
       height: 77%;
+      outline: none;
       width: 44%;
     }
   }
