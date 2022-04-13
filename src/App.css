@@ -29,13 +29,14 @@
 
 @media screen and (min-width:992px) {
   .App{
-    background-position: 100% 0%;
+    background-image: url('/public/images/bg-top.svg'), url('/public/images/bg-bottom.svg');
+    background-position: 100% 0%, -50% 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   
   .card-components-container{
     flex-direction: row;
     margin-top: 10vh;
   }
-
-  
-}
+} 
